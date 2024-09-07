@@ -199,7 +199,7 @@ clearRadioSelections();
 
 
 function changeBackground(questionIndex) {
-    const newImageUrl = `url('../images/img${questionIndex + 1}.jpg')`;
+    const newImageUrl = `url('../Images/img${questionIndex + 1}.jpg')`; 
 
     const tempDiv = document.createElement('div');
     tempDiv.style.backgroundImage = newImageUrl;
