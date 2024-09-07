@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,100..900,1;1,9..144,100..900,1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Images/Home_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.home-container {
+  background-color: #ffffffaf;
+  width: 80%;
+  max-width: 650px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home-header {
+  margin-bottom: 20px;
+}
+
+.home-title {
+  font-size: 2.5em;
+  color: #ad6e0f;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+}
+
+.home-content {
+  margin-top: 20px;
+}
+
+.home-description {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.start-btn {
+  background-color: #ad6e0f;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #925c0b;
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    width: 95%;
+  }
+
+  .home-title {
+    font-size: 2em;
+  }
+
+  .home-description {
+    font-size: 1em;
+  }
+
+  .start-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}

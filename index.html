@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Home</title>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="home-container">
+      <header class="home-header">
+        <h1 class="home-title">Welcome to the Cook's Quiz App</h1>
+      </header>
+      <section class="home-content">
+        <p class="home-description">
+          Are you ready to test your Cooking knowledge? Click the button below
+          to start the quiz!
+        </p>
+        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+      </section>
+    </div>
+    <script>
+      function startQuiz() {
+        window.location.href = "./quizSection/quiz.html"; // Redirect to the quiz page
+      }
+    </script>
+  </body>
+</html>

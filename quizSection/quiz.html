@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="overlay"></div>
+    <div class="quiz-container">
+        <header>
+            <h1 class="quiz-title">Quiz App</h1>
+        </header>
+        <section class="quiz-content">
+            <div class="question-container">
+                <h2 class="question-title">
+                    1. What is the main ingredient in a traditional Italian pesto sauce?
+                </h2>
+                <ul class="answer-list">
+                    <li class="answer-option">
+                        <input type="radio" name="answer" id="answer1" value="Basil" /><label for="answer1">Basil</label>
+                    </li>
+                    <li class="answer-option">
+                        <input type="radio" name="answer" id="answer2" value="Parsley" /><label for="answer2">Parsley</label>
+                    </li>
+                    <li class="answer-option">
+                        <input type="radio" name="answer" id="answer3" value="Spinach" /><label for="answer3">Spinach</label>
+                    </li>
+                    <li class="answer-option">
+                        <input type="radio" name="answer" id="answer4" value="Cilantro" /><label for="answer4">Cilantro</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button class="btn prev-btn" disabled>Previous</button>
+                <button class="btn next-btn">Next</button>
+                <button class="btn submit-btn">Submit</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="custom-dialog" id="customDialog">
+        <div class="dialog-content">
+            <h2 class="dialog-title">Quiz Result</h2>
+            <p id="dialogMessage"></p>
+            <button class="btn close-btn" id="closeDialog">Close</button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
